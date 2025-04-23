@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ທຳມະຊາດແລະດອກໄມ້ | Vannakone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans Lao', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4ca46e, #2e7d32);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #2e7d32;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            margin: 1.5rem 0;
+            color: #2e7d32;
+            font-size: 2rem;
+        }
+
+        .flower-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .flower-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .flower-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .flower-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .flower-info {
+            padding: 1.5rem;
+        }
+
+        .flower-info h3 {
+            color: #2e7d32;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            color: #2e7d32;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #4ca46e;
+            margin: 0.5rem auto;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-content p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+            
+            .flower-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>ທຳມະຊາດແລະດອກໄມ້</h1>
+            <p>ຍິນດີຕ້ອນຮັບສູ່ເວັບໄຊຂອງ ວັນນະກອນ</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">ໜ້າຫຼັກ</a></li>
+            <li><a href="#flowers">ດອກໄມ້</a></li>
+            <li><a href="#about">ກ່ຽວກັບ</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home" class="hero">
+            <img src="nature_trees_forest_outdoors_pathway_sunlight_sun_rays-2043071 (1).jpg" alt="ທຳມະຊາດທີ່ສວຍງາມພ້ອມດອກໄມ້">
+            <h2>ຄວາມງາມຂອງທຳມະຊາດແລະດອກໄມ້</h2>
+            <p>ທຳມະຊາດແມ່ນແຫຼ່ງແຫ່ງຄວາມງາມແລະຄວາມສະຫງົບ. ດອກໄມ້ເປັນໜຶ່ງໃນການສະແດງອອກທີ່ສວຍງາມທີ່ສຸດຂອງທຳມະຊາດ, ສະແດງໃຫ້ເຫັນເຖິງຄວາມຫຼາກຫຼາຍແລະຄວາມສົມບູນຂອງໂລກຂອງພວກເຮົາ.</p>
+        </section>
+        
+        <h2 id="flowers" class="section-title">ດອກໄມ້ທີ່ສວຍງາມ</h2>
+        
+        <div class="flower-grid">
+            <div class="flower-card">
+                <img src="0043_sen1.jpg" alt="ດອກບົວ">
+                <div class="flower-info">
+                    <h3>ດອກບົວ</h3>
+                    <p>ດອກບົວເປັນສັນຍາລັກຂອງຄວາມບໍລິສຸດແລະຄວາມສະຫງົບ. ມັນເຕີບໃຫຍ່ໃນນ້ຳແລະເປັນດອກໄມ້ທີ່ສຳຄັນໃນວັດທະນະທຳຫຼາຍແຫ່ງ.</p>
+                </div>
+            </div>
+            
+            <div class="flower-card">
+                <img src="/tropical-3843286_640.jpg" alt="ດອກຈຳປາ">
+                <div class="flower-info">
+                    <h3>ດອກຈຳປາ</h3>
+                    <p>ດອກຈຳປາມີກິ່ນຫອມແລະເປັນທີ່ຮູ້ຈັກກັນດີໃນເຂດຮ້ອນ. ມັນມີຫຼາຍສີແລະມັກຈະໃຊ້ໃນພິທີກຳທາງສາສະໜາ.</p>
+                </div>
+            </div>
+            
+            <div class="flower-card">
+                <img src="/pexels-photo-1055756.webp" alt="ດອກກ້ວຍໄມ້">
+                <div class="flower-info">
+                    <h3>ດອກກ້ວຍໄມ້</h3>
+                    <p>ດອກກ້ວຍໄມ້ເປັນໜຶ່ງໃນຄອບຄົວດອກໄມ້ທີ່ໃຫຍ່ທີ່ສຸດ, ມີຫຼາຍກວ່າ 25,000 ສາຍພັນ. ພວກມັນມີຄວາມສວຍງາມແລະຄວາມຊັບຊ້ອນທີ່ບໍ່ມີໃຜປຽບ.</p>
+                </div>
+            </div>
+            
+            <div class="flower-card">
+                <img src="/pexels-photo-1133957.webp" alt="ດອກຊະບາ">
+                <div class="flower-info">
+                    <h3>ດອກຊະບາ</h3>
+                    <p>ດອກຊະບາມີສີສັນສົດໃສແລະເປັນສັນຍາລັກຂອງຄວາມງາມແລະຄວາມອ່ອນໄຫວ. ມັນເຕີບໃຫຍ່ໄດ້ດີໃນສະພາບອາກາດຮ້ອນ.</p>
+                </div>
+            </div>
+            
+            <div class="flower-card">
+                <img src="are-sunflowers-toxic-to-other-plants-1680196778.5773637.webp" alt="ດອກຕາເວັນ">
+                <div class="flower-info">
+                    <h3>ດອກຕາເວັນ</h3>
+                    <p>ດອກຕາເວັນເປັນສັນຍາລັກຂອງຄວາມສຸກແລະຄວາມອົບອຸ່ນ. ພວກມັນຫັນໜ້າໄປຫາດວງຕາເວັນແລະສາມາດເຕີບໃຫຍ່ໄດ້ສູງຫຼາຍ.</p>
+                </div>
+            </div>
+            
+            <div class="flower-card">
+                <img src="/6e28d56308201482fda5e26aec08d148.jpg" alt="ດອກມະລິ">
+                <div class="flower-info">
+                    <h3>ດອກມະລິ</h3>
+                    <p>ດອກມະລິມີກິ່ນຫອມຫວານແລະມັກຈະໃຊ້ໃນການເຮັດນ້ຳຫອມແລະຊາ. ມັນເປັນສັນຍາລັກຂອງຄວາມຮັກແລະຄວາມງາມ.</p>
+                </div>
+            </div>
+        </div>
+        
+        <section id="about" class="about-section">
+            <h2 class="section-title">ກ່ຽວກັບເວັບໄຊນີ້</h2>
+            <p>ເວັບໄຊນີ້ສ້າງຂຶ້ນໂດຍ ວັນນະກອນ ເພື່ອສະແດງຄວາມງາມຂອງທຳມະຊາດແລະດອກໄມ້. ຈຸດປະສົງຂອງເວັບໄຊນີ້ແມ່ນເພື່ອແບ່ງປັນຄວາມຮັກຕໍ່ທຳມະຊາດແລະສ້າງຄວາມຮັບຮູ້ກ່ຽວກັບຄວາມສຳຄັນຂອງການອະນຸລັກສິ່ງແວດລ້ອມ.</p>
+            <p>ຂໍຂອບໃຈທີ່ເຂົ້າມາຢ້ຽມຊົມເວັບໄຊຂອງພວກເຮົາ. ຫວັງວ່າທ່ານຈະມີຄວາມສຸກກັບການສຳຫຼວດຄວາມງາມຂອງດອກໄມ້ແລະທຳມະຊາດ.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>ທຳມະຊາດແລະດອກໄມ້</h3>
+            <p>ສ້າງດ້ວຍຄວາມຮັກໂດຍ ວັນນະກອນ</p>
+            <p>&copy; 2025 ສະຫງວນລິຂະສິດທັງໝົດ</p>
+        </div>
+    </footer>
+</body>
+</html>
